@@ -45,6 +45,7 @@ nav ul li ul{
     padding: 10px; /** this gives the text in the dropdown some padding **/
 }
 
+
 nav ul li:hover ul{
     display: block;
 }
@@ -62,3 +63,23 @@ nav ul li ul li a {
  nav ul li ul li a:hover{ /** hover shows a highlighting on the dropdown when a mouse is pinted at it **/
   background-color: violet;
 } 
+
+/** Formatting sub sub menu **/
+
+nav ul li .stkitems li{
+    float: none;
+    list-style: none; /** takes off bullets **/
+    position: relative;
+}
+
+
+nav ul li ul li .stkitems{
+    display: none; /** This hides the dropdown till the menu is clicked or hovered over **/
+    position:relative;
+    background-color:white;
+    padding: 10px; /** this gives the text in the dropdown some padding **/
+}
+
+nav ul li ul li:hover .stkitems{
+    display: block;
+}

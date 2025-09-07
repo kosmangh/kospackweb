@@ -40,7 +40,7 @@ nav ul li a{
 
 nav ul li ul{
     display: none; /** This hides the dropdown till the menu is clicked or hovered over **/
-    position: absolute;
+    position:relative;
     background-color: aquamarine;
     padding: 10px; /** this gives the text in the dropdown some padding **/
 }
@@ -66,20 +66,39 @@ nav ul li ul li a {
 
 /** Formatting sub sub menu **/
 
-nav ul li .stkitems li{
-    float: none;
-    list-style: none; /** takes off bullets **/
-    position: relative;
-}
-
-
-nav ul li ul li .stkitems{
+nav ul li ul li ul{
     display: none; /** This hides the dropdown till the menu is clicked or hovered over **/
-    position:relative;
     background-color:white;
     padding: 10px; /** this gives the text in the dropdown some padding **/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav ul li ul li:hover .stkitems{
+
+nav ul li ul li a{
+    padding: 10px 14px;
+    text-decoration: none; /** removes underlining **/
+}
+
+nav ul li ul li{
+    float: none;
+    list-style: none; /** takes off bullets **/
+}
+
+
+nav ul li ul li ul li a{
+    padding: 0px 20px;
+    text-decoration: none; /** removes underlining **/
+}
+
+
+nav ul li ul li ul:hover{
     display: block;
+    position:absolute;
+}
+.strong-blue{
+    color: blue;
+    margin-left: 12px;
+}
+.kosmaintext{
+    position:static ;
 }
